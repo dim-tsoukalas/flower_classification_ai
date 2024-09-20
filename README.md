@@ -10,25 +10,24 @@ This dataset belongs to [DPhi Data Sprint #25: Flower Recognition](https://dphi.
 - rose
 - sunflower
 - tulip
+  
+<img width="809" alt="Screenshot 2024-09-20 at 10 33 24 PM" src="https://github.com/user-attachments/assets/6966fa10-e923-4f81-adee-ee024ce1b737">
 
-### Content
-- train - contains all the images that are to be used for training your model.  In this folder you will find five folders namely - 'daisy', 'dandelion', 'rose', 'sunflower' and 'tulip' which contain the images of the respective flowers
-- test - contains 924 flowers images. For these images you are required to make predictions as the respective flower names - 'daisy', 'dandelion', 'rose', 'sunflower' and 'tulip'
-- Testing_set_flower.csv - this is the order of the predictions for each image that is to be submitted on the platform. Make sure the predictions you download are with their image's filename in the same order as given in this file.
-sample_submission: This is a csv file that contains the sample submission for the data sprint.
+## Run the code:
+
+   ```bash
+   git clone https://github.com/dim-tsoukalas/flower_classification_ai.git
+   cd flower_classification_ai/code
+pip install -r requirements.txt
+python main.py
+```
 
 ## About the Convolutional Neural Network (CNN)
 This CNN can process images with size 112x112x3 and can classifie them to 5 classes.
 In my CNN I used:
 
-Neuron | Size
---- | --- 
-Input | (112, 112, 3)
-#1 | 32, (3,3)
-#2 | 64, (3,3)
-#3 | 128, (3,3)
-#4 | 512
-Output | 5
+<img width="643" alt="Screenshot 2024-09-20 at 10 44 15 PM" src="https://github.com/user-attachments/assets/24194486-70df-458b-870c-ee2c29ba834d">
+
 
 ### Results
 Training Set Acc | Test Set Acc
